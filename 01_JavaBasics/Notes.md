@@ -1,6 +1,6 @@
 # Day 1 - Java Basics
 
-14-07-2025
+**Date:** 14-07-2025
 
 ---
 
@@ -65,4 +65,4 @@ char → Character
 Useful for using primitives in collections like ArrayList.
 
 ✍️ Summary
-Today we learned how Java runs on any platform using JVM, the difference between JDK/JRE/JVM, and various types of variables and casting in Java. These are the building blocks for understanding Java programs and memory management.
+Today I learned how Java runs on any platform using JVM, the difference between JDK/JRE/JVM, and various types of variables and casting in Java. These are the building blocks for understanding Java programs and memory management.
