@@ -45,11 +45,14 @@ Java code is compiled into **bytecode** by the compiler, which runs on the **Jav
 | double   | 5.5           |
 | boolean  | true / false  |
 | char     | 'A'           |
-| String   | "Hello"       |
+| String   | "Hello" 
+     |
 
 ### 🔹 Type Casting
 - **Implicit (Widening)**: `int → long → float → double`
+   >It is done automatically by complier
 - **Explicit (Narrowing)**: `double → float → int` (needs cast)
+   >It is done by developer and compiler wont
 
 ```java
 int x = (int) 10.5; // Explicit casting
