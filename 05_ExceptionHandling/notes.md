@@ -60,3 +60,58 @@ Used to throw an exception manually.
 java
 Copy code
 throw new IllegalArgumentException("Invalid input");
+
+
+📄 Exception Object – Ways to Print Exception Details
+java
+Copy code
+try {
+    // risky code
+} catch (Exception e) {
+    System.out.println(e);           // 1. className: message
+    System.out.println(e.getMessage()); // 2. message only
+    e.printStackTrace();             // 3. full stack trace
+}
+
+🔄 finally block
+Always executes whether exception occurs or not.
+
+Used for clean-up activities like closing files, DB connections.
+
+java
+Copy code
+try {
+    // code
+} catch (Exception e) {
+    // handler
+} finally {
+    // always executes
+}
+
+🛠️ Custom (User-Defined) Exceptions
+Create a class extending Exception or RuntimeException
+
+Provide constructors
+
+Use throw to throw it
+
+java
+Copy code
+class MyException extends Exception {
+    public MyException(String msg) {
+        super(msg);
+    }
+}
+
+throw new MyException("Custom error occurred");
+
+🧵 Summary
+Exceptions help manage errors gracefully.
+
+Use try-catch to catch and handle exceptions.
+
+Use throws in method signature to declare exceptions.
+
+Use throw to manually trigger exceptions.
+
+finally block ensures important code always runs.
