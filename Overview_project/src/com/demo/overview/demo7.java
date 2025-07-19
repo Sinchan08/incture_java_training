@@ -1,0 +1,32 @@
+package com.demo.overview;
+import java.util.Scanner;
+
+
+public class demo7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stu
+		//int a[]= {20,30,40,50};
+		int evencount=0;
+		int oddcount=0;
+		int a[]=new int[4];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of array elements");
+		for(int j=0;j<=a.length-1;j++) {
+			
+			a[j]=sc.nextInt();
+			if(a[j]%2==0) {
+				evencount=evencount+1;
+				System.out.println("The number is even"+a[j]);
+			}
+			else {
+				oddcount=oddcount+1;
+				System.out.println("The number is odd"+a[j]);
+			}
+			
+		}
+		System.out.println("The total number of even number is"+evencount);
+		System.out.println("The total number of odd number is"+oddcount);
+	}
+
+}
