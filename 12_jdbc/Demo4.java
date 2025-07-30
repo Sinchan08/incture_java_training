@@ -10,7 +10,7 @@ public class Demo4 {
 	       Class.forName("com.mysql.jdbc.Driver");
 			
 			String user_name="root";
-			String password="Sinchana@26";
+			String password="****";
 			String url="jdbc:mysql://localhost:3306/SCEM_DB";
 			
 			Connection con=DriverManager.getConnection(url,user_name,password);
